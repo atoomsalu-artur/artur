@@ -1,3 +1,27 @@
+import turtle
+
+try:
+    r= float(input("ringi raadius r="))
+    s= 3.14 * r
+    p = 2 * 3.14 * r
+    print(f"Ringi pindala on {s:0.2f} ja ümbermõõt on {p:.2}")
+    turtle.circle(r)
+except:
+    print("Kontrolli sisestust!")
+    
+
+turtle.done()
+
+
+
+
+
+
+
+
+
+
+
 # Kingituste pakkimine
 # Sa töötad kingipoes ja sinu ülesanne on pakkida kingitusi.
 # Igasse kinkekarpi mahub täpselt 5 kingitust.
@@ -8,16 +32,18 @@
 # Näide: 9 = 1, 4
 # Kasutaja sisestab: 23
 # Programm väljastab: Saad teha 4 täis kinkekasti. Üle jääb 3 kingitust.
-try:
-    kingitused = int(input("Lisa kingituse arv: "))
-    maht = 5
 
-    kingitusi_kokku = kingitused // maht #täisarvuline jagamine
-    ylejaak = kingitused % maht #jääk
 
-    print(f"Saad teha {kingitusi_kokku} täis kinkekasti. Üle jääb {ylejaak} kingitust.")
-except:
-    print("kontrolli sisestust")
+#try:
+    #kingitused = int(input("Lisa kingituse arv: "))
+    #maht = 5
+
+    #kingitusi_kokku = kingitused // maht #täisarvuline jagamine
+    #ylejaak = kingitused % maht #jääk
+
+    #print(f"Saad teha {kingitusi_kokku} täis kinkekasti. Üle jääb {ylejaak} kingitust.")
+#except:
+    #print("kontrolli sisestust")
 
 
 # Raamatupoes on 30% soodusmüük.
@@ -30,11 +56,11 @@ except:
 
 
 
-ale = 0.3
-hind = 12.53
-kogus = int(input("Sisesta raamatute kogus: "))
-summa = (hind-hind*ale)*kogus
-print(f"{kogus} raamatu hind soodustusega on {summa:0.2f}€.")
+#ale = 0.3
+#hind = 12.53
+#kogus = int(input("Sisesta raamatute kogus: "))
+#summa = (hind-hind*ale)*kogus
+#print(f"{kogus} raamatu hind soodustusega on {summa:0.2f}€.")
 
 # Kirjuta programm, mis aitab aiapidajal arvutada aia ümbermõõtu.
 # Aed on ristküliku kujuline.
@@ -45,7 +71,8 @@ print(f"{kogus} raamatu hind soodustusega on {summa:0.2f}€.")
 # Programm väljastab: Aia kogupikkus on 18 meetrit.
 # 
 # kasutaja sisestus ja muudan täis arvuks
-a= int(input("Lisa külg 1: "))
-b= int(input("Lisa külg 2: "))
-p = (a+b)*2
-print(f"Aia kogupikkus on {p} meetrit.")
+#a= int(input("Lisa külg 1: "))
+#b= int(input("Lisa külg 2: "))
+#p = (a+b)*2
+#print(f"Aia kogupikkus on {p} meetrit.")
+
