@@ -1,22 +1,19 @@
 import turtle
 
-t = turtle.Turtle()
+t  = turtle.Turtle()
+t.speed(3)
+t.pensize(2)
+t.color("black")
 
-for _ in range(4):
-    t.forward(100)
-    t.right(90)
+def  draw_square(x, y, size):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    for _ in range(4):
+        t.forward(size)
+        t.right(90)
 
-t.penup()
+draw_square(-100, 50, 150)
+draw_square(-30, -180, -150)
 
-t.penup()
-t.forward(50)
-t.right(90)
-t.forward(50)
-t.left(90)
-t.pendown()
-
-for _ in range(4):
-    t.forward(100)
-    t.left(90)
-
-turtle.done()
+turtle.done
