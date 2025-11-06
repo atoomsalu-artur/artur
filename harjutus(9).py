@@ -1,4 +1,3 @@
-#Harjutus 9
 ev_data = [
 ['vehicle', 'range', 'price'],
 ['Tesla Model Y Long Range', '330', '58990'],
@@ -46,3 +45,5 @@ for i in ev_data:
 
 
 print(f"Parim elektriauto: {parim_auto}")
+
+
