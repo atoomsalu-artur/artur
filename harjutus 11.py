@@ -1,0 +1,23 @@
+#Harjutused 11
+def sarnased_esitahed(s):
+    s1, s2 = s.split(" ")
+    #print(s1, s2)
+    if s1[0].capitalize()==s2[0].capitalize():
+        return True
+    else:
+        return False
+    
+    
+
+print(sarnased_esitahed('Vapper Vares'))
+print(sarnased_esitahed('Lahe Känguru'))
+
+
+#def tervita(m, k="maailm"):
+#    print("Tere",k,m)
+    
+#def tervita2():
+#    return("Tere kosmos!")
+
+#tervita("Karin", "Eegreid")
+#print(tervita2())
