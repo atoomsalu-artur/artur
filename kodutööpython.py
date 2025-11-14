@@ -16,8 +16,8 @@ def joonista_viisnurk():
 
 while True:
 
-    kuju = input("Millist kujundit soovid (viisnurk, ring, ruut, suvaline)? ")
-    if kuju == "":
+    kujund = input("Millist kujundit soovid (viisnurk, ring, ruut, suvaline)? ")
+    if kujund == "":
         break
 
     mitu_sisend = input("Mitu kujundit soovid joonistada? ")
@@ -33,7 +33,7 @@ while True:
     turtle.speed(0)
     turtle.pensize(2)
 
-    if kuju == "suvaline":
+    if kujund == "suvaline":
 
         for _ in range(mitu):
             x = random.randint(-200, 200)
@@ -60,14 +60,14 @@ while True:
 
         for _ in range(mitu):
 
-            if kuju == "ruut":
+            if kujund == "ruut":
                 joonista_ruut()
-            elif kuju == "ring":
+            elif kujund == "ring":
                 joonista_ring()
-            elif kuju == "viisnurk":
+            elif kujund == "viisnurk":
                 joonista_viisnurk()
             else:
-                print("Tundmatu kuju!")
+                print("Tundmatu kujund!")
                 break
 
             turtle.penup()
